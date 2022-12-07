@@ -2,13 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-int main() {
+// TODO args con monto semanal
+int main(int argc, char **argv) {
   int presupuesto;
   char input;
-  int monto_total;
-  printf("Mi presupuesto semanal es: ");
-  scanf("%d", &presupuesto);
+  int monto_total = 1000;
+  // printf("Mi presupuesto semanal es: ");
+  // scanf("%d", &presupuesto);
   do {
     char nombre_producto = '\0';
     int monto_ingresado;
@@ -24,7 +24,7 @@ int main() {
       break;
     }
     monto_total = monto_total + monto_ingresado;
-    quitarDeLaLista(nombre_producto);
+    // TODO: quitarDeLaLista(nombre_producto);
 
   } while (1);
 }
