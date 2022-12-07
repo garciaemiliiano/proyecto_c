@@ -13,6 +13,7 @@ int main() {
     char nombre_producto = '\0';
     int monto_ingresado;
 
+    // TODO: Fix segundo scanf
     printf("Ingrese el nombre del producto comprado: ");
     scanf("%c", &nombre_producto);
 
