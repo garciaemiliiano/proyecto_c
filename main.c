@@ -10,18 +10,16 @@ char *readData();
 void _gestorDeEmpleados();
 
 int main() {
-  int opcion;
-  printf("Elegir opcion: ");
-  scanf("%d", &opcion);
+  int opcion[20];
+  printf("Elegir opcion: n1- Calculadora");
 
+  fgets(&opcion, 20, stdin);
   switch (opcion) {
     case 1:
-      _gestorDeEmpleados();
+      mainCalculadora();
       break;
     case 2:
-      printf("case 2");
       break;
-
     default:
       break;
   }
@@ -62,7 +60,7 @@ void _gestorDeEmpleados() {
   fgets(string1, sizeof(string1), stdin);
   fgets(string2, sizeof(string2), stdin);
 
-    strcat(string1, string2);
+  strcat(string1, string2);
 
   printf(string1);
   char frase_insert[256];
