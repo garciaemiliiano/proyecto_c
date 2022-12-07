@@ -4,7 +4,7 @@ int main() {
   char opt;
   int n1, n2;
   float res;
-  printf("Seleccione el operador(+,-,*,/\n");
+  printf("Seleccione el operador(+,-,*,/)\n");
   scanf("%c", &opt);
   printf(" \n Primer número: ");
   scanf(" %d", &n1);
